@@ -1,0 +1,66 @@
+<snippet>
+	<content><![CDATA[
+		<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	 <data>
+	 	<!-- template_view.xml  -->
+	 	<!--  Vamos a grabar datos  -->
+	 	<record id="template__modelo_tree" model="ir.ui.view">
+	 		<field name="name">template.modelo.tree</field>
+	 		<field name="model">template.modelo</field>
+            	<field name="arch" type="xml"> 
+            	   <tree string ="Listado de...">
+            	   	  <field name="name" />
+            	   	  <field name="fecha" />
+            	   </tree>      	
+                </field>
+	    </record>
+
+
+	   <!--  Vamos a grabar datos  -->
+	 	<record id="template_modelo_form" model="ir.ui.view">
+	 		<field name="name">template.modelo.form</field>
+	 		<field name="model">template.modelo</field>
+            	<field name="arch" type="xml"> 
+            	   <form string ="Formulario de ..." version="9.0">
+            	   	<!--  Cuerpo  -->
+            	   	<sheet>
+            	   	<group col="4"> 
+            	   		 <field name="name" />
+            	   	     <field name="fecha" />
+            	   	     <field name="edad" />
+                         <field name="usuario_id"/>
+            	   	     <field name="active" />                       
+            	   	</group>                 
+            	   	</sheet>
+            	   	 </form>      	
+                </field>
+	    </record>
+
+        <!--  Definimos los eventos -->
+        <record id="template_modelo_action" model="ir.actions.act_window">
+        	<field name="name">Modelo</field>
+        	<field name="res_model">template.modelo</field>
+        	<field name="view_type">form</field>
+        	<field name="view_mode">tree,form</field>
+        </record>
+
+        <!--  Definimos el menu-->
+        <!--  OPENACADEMY-->
+        <!--  OPENACADEMY -> ESTUDIANTES -->
+        <menuitem id="template_modelo_menu" name="Template" />
+        <menuitem id="template_modelo_submenu" name="Modelo" parent="template_modelo_menu" sequence="0" />
+
+        <!--  Enlazamos la acción al submenú-->
+        <menuitem id="template_modelo_menu_action" name="Template" parent="template_modelo_submenu" sequence="0" action="template_modelo_action"/>
+
+
+     </data>
+</openerp>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>view</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description> Odoo - Imprime el archivo: template_view.xml </description>
+</snippet>
