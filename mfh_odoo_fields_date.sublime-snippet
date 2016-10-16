@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+'fecha_nacimiento' : fields.date('Fecha de nacimiento', help='Fecha de Nacimiento'),
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fields.date.m</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description> Odoo - Campo Date (Fecha)</description>
+</snippet>

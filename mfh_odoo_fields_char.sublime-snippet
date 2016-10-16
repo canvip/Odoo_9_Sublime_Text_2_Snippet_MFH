@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+'nombre' : fields.char('Nombre', size=80, required=True, help='Aqui pones el nombre'),
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fields.char.m</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description> Odoo - Campo Char (Cadena)</description>
+</snippet>

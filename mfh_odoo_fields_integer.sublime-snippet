@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+'cedula' : fields.integer('Cedula', size=10, required=True, help='Aqui pones la cedula'),
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fields.integer.m</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description> Odoo - Campo Integer (Entero)</description>
+</snippet>
