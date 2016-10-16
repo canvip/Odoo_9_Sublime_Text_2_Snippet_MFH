@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+'active' : fields.boolean('Activo', help='Campo activo'),
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fields.boolean.m</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+	<description> Odoo - Campo Boolean(Verdadero/Falso)</description>
+</snippet>

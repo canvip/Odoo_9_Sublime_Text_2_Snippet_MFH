@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+        <record id="view_mfh_estudiantes_tree_id" model="ir.ui.view">
+            <field name="name">mfh_estudiantes_tree</field>
+            <!-- Nombre del modelo -->
+            <field name="model">mfh.estudiantes</field>
+            <field name="type">tree</field>
+                <field name="arch" type="xml">
+                   <tree string="Estudiantes" colors="blue:cedula > 2">
+                           <field name="cedula"/>
+                   </tree>                              
+                </field>
+        </record>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>treeblue</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope>-->
+	<description> Odoo - Resalta en Azul una fila </description>
+</snippet>
