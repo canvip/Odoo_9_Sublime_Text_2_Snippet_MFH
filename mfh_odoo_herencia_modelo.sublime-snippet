@@ -5,15 +5,23 @@
 # res_company.py
 
 from openerp.osv import fields, osv
+from openerp.tools.translate import _
 
-class res_company(osv.osv):
-    # declaramos el nombre de la clase que heredamos
-    _name = 'res.company'
-    _inherit= ['res.company']
-    _columns = {
-       'rut' : fields.char('Rut', size=10, required=True, help='Aqui pones el Rut'),
-    }
-res_company()
+class res_partner(osv.osv):
+	_name = 'res.partner'
+	_inherit = 'res.partner'
+	_columns = {
+	   'rut' : fields.char('Rut' , size=10 , help='Este es rut'),
+	   'emaildte' : fields.char('Emaildte' , size=256 , help='Este es mail para el dte'),
+	   'giro' : fields.char('Giro' , size=256 , help='Este es el Giro'),
+	}
+
+
+	_defaults = {
+       'giro' : 'Obras de Inegieria',
+	}
+
+res_partner()
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>herenciam</tabTrigger> -->
