@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+ <template id="report_saleorder_custom" inherit_id="sale.report_saleorder">        
+			<t t-call="report.html_container" position="replace">
+				<t t-call="report.html_container">
+					<t t-foreach="docs" t-as="doc">
+						<t t-call="mfhreport.report_saleorder_document" t-lang="doc.partner_id.lang"/>
+					</t>
+				</t>
+			</t>
+</template>
+
+	</data>
+</openerp>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>qweb</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope>-->
+	<description> Odoo.qweb - Crear un reporte </description>
+</snippet>
